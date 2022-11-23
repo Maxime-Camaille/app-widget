@@ -1,24 +1,35 @@
-import logo from './logo.svg';
+import Widget from './component/widget';
 import './App.css';
+import { useState } from 'react';
+import axios from 'axios';
 
 function App() {
+  const [city, setCity] = useState('Guichainville');
+  const [codePostale, setcodePostale] = useState('27930');
+  const [temperature, setTemperature] = useState('');
+  const requestAPI = () => {
+    axios
+      .get(
+        `https://api.openweathermap.org/data/2.5/weather?q=${codePostale},fr&appid=145cdec1b64aaab063c3dc8523f9266a&units=metric`
+      )
+      .then((response) => {
+        console.log(response.data.main.temp);
+        setTemperature(Math.floor(response.data.main.temp));
+        return;
+      })
+      .catch((error) => {
+        console.log(error);
+        setTemperature('..');
+      });
+  };
+  requestAPI();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Widget
+      city={city}
+      codePostale={codePostale}
+      temperature={temperature}
+    ></Widget>
   );
 }
 

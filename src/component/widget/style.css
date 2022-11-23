@@ -1,0 +1,43 @@
+.container{
+    background-color: #E6E7EE;
+    box-shadow: 6px 6px 12px #b8b9be,-6px -6px 12px #fff!important;
+    border: 0.0625rem solid rgba(243,247,250,.05);
+    border-radius: 0.55rem;
+    width: 500px;
+    margin: auto;
+    margin-top: 7rem;
+    display: flex;
+    flex-direction: column;
+}
+.weather-icon{
+    margin-top: 3rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.logo{
+    width: 100px;
+    
+}
+
+h1{
+    font-size: 2em;
+    text-align: center;
+    color: #31344b;
+    margin-bottom: 0;
+  }
+
+h2{
+    font-size: 1em;
+    text-align: center;
+    color: #31344b;
+    margin-bottom: 3rem;
+  }
+.temperature{
+    font-size: 7em;
+    line-height: 1;
+    text-align: center;
+    display: block;
+    padding-left: 30px;
+    margin-bottom: 3rem;
+    color: #31344b;
+  }
