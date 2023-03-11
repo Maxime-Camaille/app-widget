@@ -10,12 +10,12 @@
     flex-direction: column;
 }
 .weather-icon{
-    margin-top: 3rem;
+    margin-top: 1rem;
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
 }
 .logo{
-    width: 100px;
+    width: 150px;
     
 }
 

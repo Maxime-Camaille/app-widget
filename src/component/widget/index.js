@@ -1,12 +1,12 @@
 import './style.css';
 
-function Widget({ city, codePostale, temperature }) {
+function Widget({ city, codePostale, temperature, iconId }) {
   return (
     <article className='container'>
       <div className='weather-icon'>
         <img
           className='logo'
-          src='https://cdn-icons-png.flaticon.com/512/1213/1213595.png'
+          src={`http://openweathermap.org/img/wn/${iconId}@2x.png`}
           alt='logo'
         ></img>
       </div>
