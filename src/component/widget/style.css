@@ -1,43 +1,62 @@
-.container{
-    background-color: #E6E7EE;
-    box-shadow: 6px 6px 12px #b8b9be,-6px -6px 12px #fff!important;
-    border: 0.0625rem solid rgba(243,247,250,.05);
-    border-radius: 0.55rem;
-    width: 500px;
-    margin: auto;
-    margin-top: 7rem;
-    display: flex;
-    flex-direction: column;
+.container {
+  background-color: #ddf7e4c9;
+  border-radius: 50px;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
-.weather-icon{
-    margin-top: 1rem;
-    text-align: center;
-    margin-bottom: 1rem;
+.city-container {
+  display: flex;
+  flex-direction: row-reverse;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center;
 }
-.logo{
-    width: 150px;
-    
+.city-container img {
+  width: 100px;
 }
-
-h1{
-    font-size: 2em;
-    text-align: center;
-    color: #31344b;
-    margin-bottom: 0;
-  }
-
-h2{
-    font-size: 1em;
-    text-align: center;
-    color: #31344b;
-    margin-bottom: 3rem;
-  }
-.temperature{
-    font-size: 7em;
-    line-height: 1;
-    text-align: center;
-    display: block;
-    padding-left: 30px;
-    margin-bottom: 3rem;
-    color: #31344b;
-  }
+.city {
+  color: #0a693f;
+  font-size: 40px;
+  font-weight: 400;
+  margin: 0;
+}
+.temperature {
+  color: #0a693f;
+  font-size: 150px;
+  font-weight: 700;
+  margin-left: 4rem;
+}
+.container-temperature-range {
+  font-size: 50px;
+  font-weight: 400;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+.min-temperature {
+  color: #78837b;
+  padding: 0.5rem;
+}
+.max-temperature {
+  color: #0a693f;
+  padding: 0.5rem;
+}
+.material-symbols-outlined {
+  color: #0a693f;
+  cursor: pointer;
+  font-size: 50px;
+  font-weight: 500;
+  border: none;
+}
+.update-button {
+  background: none;
+  border: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}

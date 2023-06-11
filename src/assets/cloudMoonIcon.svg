@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 67 45.11">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: url(#New_Gradient_Swatch_copy_2);
+      }
+
+      .cls-3 {
+        fill: url(#New_Gradient_Swatch_copy);
+      }
+    </style>
+    <linearGradient id="New_Gradient_Swatch_copy" data-name="New Gradient Swatch copy" x1="42.62" y1="24.38" x2="58.22" y2="8.78" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#00aeef"/>
+      <stop offset="1" stop-color="#00bdf2"/>
+    </linearGradient>
+    <linearGradient id="New_Gradient_Swatch_copy_2" data-name="New Gradient Swatch copy 2" x1="11.8" y1="49.18" x2="44.17" y2="16.81" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d0e8f8"/>
+      <stop offset="1" stop-color="#e1eef9"/>
+    </linearGradient>
+  </defs>
+  <g id="Icons">
+    <g id="Mostly_Cloudy_Night" data-name="Mostly Cloudy Night">
+      <path class="cls-3" d="M52.94,28.67c-8.05,0-14.61-6.55-14.61-14.61C38.33,7.59,42.68,1.82,48.91,.03c.27-.08,.56,0,.75,.19,.2,.2,.27,.48,.19,.75-.34,1.19-.52,2.41-.52,3.61,0,7.21,5.87,13.08,13.08,13.08,1.2,0,2.41-.17,3.61-.52,.27-.08,.56,0,.75,.19,.2,.2,.27,.48,.19,.75-1.79,6.23-7.56,10.57-14.03,10.57Z"/>
+      <path class="cls-2" d="M46,45.11c5.89,0,10.66-4.77,10.66-10.66s-4.77-10.66-10.66-10.66c-.04,0-.07,0-.11,0-.95-8.5-8.16-15.12-16.91-15.12-6.92,0-12.86,4.13-15.53,10.05-.08,0-.17,0-.25,0C5.91,18.71,0,24.62,0,31.91s5.91,13.2,13.2,13.2"/>
+      <path class="cls-1" d="M60.22,45.11c3.7,0,6.7-3,6.7-6.7s-3-6.7-6.7-6.7c-.02,0-.05,0-.07,0-.6-5.34-5.12-9.49-10.62-9.49-4.34,0-8.08,2.59-9.75,6.31-.05,0-.11,0-.16,0-4.58,0-8.29,3.71-8.29,8.29s3.71,8.29,8.29,8.29"/>
+    </g>
+  </g>
+</svg>
