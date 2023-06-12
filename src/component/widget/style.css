@@ -1,3 +1,4 @@
+/* Styles pour le conteneur principal */
 .container {
   background-color: #ddf7e4c9;
   border-radius: 50px;
@@ -8,7 +9,13 @@
   justify-content: space-around;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
     rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
+
+/* Styles pour le conteneur de la ville */
 .city-container {
   display: flex;
   flex-direction: row-reverse;
@@ -16,21 +23,52 @@
   justify-content: space-around;
   align-items: center;
 }
+
 .city-container img {
   width: 100px;
+  padding: 2rem;
 }
+
+/* Styles pour le nom de la ville */
 .city {
   color: #0a693f;
   font-size: 40px;
   font-weight: 400;
   margin: 0;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  padding: 1rem;
 }
+
+.city:hover {
+  opacity: 0.7;
+}
+
+/* Styles pour le mode édition du nom de la ville */
+.edit-city {
+  font-size: 40px;
+  font-weight: 400;
+  color: #0a693f;
+  border: none;
+  background-color: transparent;
+  text-align: center;
+  outline: none;
+}
+
+.edit-city:focus {
+  outline: none;
+  caret-color: #0a693f;
+}
+
+/* Styles pour la température */
 .temperature {
   color: #0a693f;
   font-size: 150px;
   font-weight: 700;
   margin-left: 4rem;
 }
+
+/* Styles pour la plage de température */
 .container-temperature-range {
   font-size: 50px;
   font-weight: 400;
@@ -38,14 +76,18 @@
   justify-content: space-around;
   margin-bottom: 1rem;
 }
+
 .min-temperature {
   color: #78837b;
   padding: 0.5rem;
 }
+
 .max-temperature {
   color: #0a693f;
   padding: 0.5rem;
 }
+
+/* Styles pour les icônes */
 .material-symbols-outlined {
   color: #0a693f;
   cursor: pointer;
@@ -53,10 +95,137 @@
   font-weight: 500;
   border: none;
 }
+
+/* Styles pour le bouton de mise à jour */
 .update-button {
   background: none;
   border: none;
   padding: 0;
   display: flex;
   align-items: center;
+}
+
+/* Styles pour le conteneur du bouton d'annulation */
+.cancel-button-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* Styles pour le bouton d'annulation */
+.cancel-button {
+  background-color: #c62828;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cancel-button:hover {
+  background-color: #872020;
+}
+
+.cancel-button:focus {
+  outline: none;
+}
+
+/* Styles pour le thème bleu */
+.blue-theme {
+  background-color: #cfeeffc9;
+}
+
+.blue-theme .city,
+.blue-theme .temperature,
+.blue-theme .max-temperature,
+.blue-theme .material-symbols-outlined{
+  color: #1a4b8d;
+}
+
+.theme-button.blue-theme .material-symbols-outlined {
+  color: #fff;
+  font-size: 24px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #1a4b8d;
+}
+.theme-button.blue-theme{
+  border: none;
+  background-color: #ffffff00;
+}
+/* Styles pour le thème orange */
+.orange-theme {
+  background-color: #ffdccac9;
+
+}
+
+.orange-theme .city,
+.orange-theme .temperature,
+.orange-theme .max-temperature,
+.orange-theme .material-symbols-outlined{
+  color: #b34612;
+}
+
+.theme-button.orange-theme .material-symbols-outlined {
+  color: #fff;
+  font-size: 24px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #b34612;
+}
+.theme-button.orange-theme{
+  border: none;
+  background-color: #ffffff00;
+}
+/* Styles pour une version mobile */
+@media (max-width: 600px) {
+  .container {
+    width: 300px;
+    height: 300px;
+  }
+
+  .city {
+    font-size: 1.25rem;
+    padding: 1rem;
+  }
+
+  .city-container img {
+    width: 50px;
+    padding: 1rem;
+  }
+
+  .temperature {
+    font-size: 80px;
+    margin-left: 2rem;
+  }
+
+  .container-temperature-range {
+    font-size: 1.25rem;
+  }
+
+  .material-symbols-outlined {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  .edit-city {
+    font-size: 1.25rem;
+  }
+
+  .cancel-button {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+
+  .theme-button {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .theme-button .material-symbols-outlined {
+    font-size: 18px;
+    padding: 6px;
+  }
 }
