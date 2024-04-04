@@ -12,7 +12,9 @@ Le Widget Météo est un outil pratique pour obtenir rapidement les informations
 - Deux boutons permettant de basculer entre deux thèmes de couleur : bleu et rouge
 
 ## Captures d'écran
-[Insérez des captures d'écran ou des GIF illustrant le widget en action]
+![Widget Météo](src/assets/widgetMétéo.png)
+![Modification de la ville](src/assets/nouvelleVille.png)
+![Changement de thème](src/assets/ChangementTheme.png)
 
 ## Utilisation
 1. Accédez au widget via le lien suivant : [Widget Météo](https://app-widget-git-main-maxime-camaille.vercel.app/).
